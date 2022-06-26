@@ -10,10 +10,10 @@ namespace LineComparision
     {
         static void Main(string[] args)
         {
-            Program.TwoLinesComparison();
+            Program.Comparelines();
 
         }
-        public static void TwoLinesComparison()
+        public static void Comparelines()
         {
             Console.WriteLine("Enter the value of x1 :");
             double x1 = Convert.ToDouble(Console.ReadLine());
@@ -47,12 +47,16 @@ namespace LineComparision
             {
                 Console.WriteLine("Line-A and Line-B are equal length");
             }
+            else if (result1 > result2)
+            {
+                Console.WriteLine("Length of Line-A is greater than Line-B");
+            }
             else
             {
-                Console.WriteLine("LineA and LineB are not equal length");
+                Console.WriteLine("Length of Line-B is greater than Line-A");
             }
-
-
         }
+
+
     }
 }
